@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel + Tailwind Example</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js']) <!-- Asegúrate de que Vite esté cargado correctamente -->
-</head>
-<body class="bg-gray-100 font-sans antialiased">
+@extends('layouts.app')
+
+@section('content')
     <div class="container mx-auto p-4">
         <header class="text-center mb-6">
             <h1 class="text-4xl font-bold text-blue-600">
@@ -66,5 +60,4 @@
             <p>&copy; {{ date('Y') }} Tu empresa. Todos los derechos reservados.</p>
         </footer>
     </div>
-</body>
-</html>
+@endsection
