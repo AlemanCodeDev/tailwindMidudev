@@ -9,7 +9,8 @@
 <body>
   <a href="/">Laravel</a> |
   <a href="/inicio">Suma</a> |
-  <a href="/template">Template</a>
+  <a href="/template">Template|</a>
+  <a href="/productos">Productos</a>
   @yield('content') 
 
   Hola Soy el template
