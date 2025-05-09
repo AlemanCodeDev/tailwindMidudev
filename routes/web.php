@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\SumaController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\LoginController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,5 +23,11 @@ Route::post('/inicio', [SumaController::class, 'suma']);
 Route::get('/template', [SumaController::class, 'template']);
 
 Route::get('/productos', [ProductoController::class, 'index']);
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/loginDos', [LoginController::class, 'login']);
+Route::get('/loginTres', [LoginController::class, 'loginImg']);
+
+Route::get('/curso', [SumaController::class, 'tailwind']);
 
 

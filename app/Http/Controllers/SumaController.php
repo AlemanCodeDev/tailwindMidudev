@@ -20,4 +20,8 @@ class SumaController extends Controller
     public function template(){
         return view('template');
     }
+
+    public function tailwind(){
+        return view('tailwindCurso');
+    }
 }
