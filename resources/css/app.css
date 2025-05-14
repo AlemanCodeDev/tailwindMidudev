@@ -1,14 +1,32 @@
 @import 'tailwindcss';
 
+@plugin '@midudev/tailwind-animations';
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter.woff2');
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-script: Great Vibes, cursive;
-    --color-mint-500: oklch(0.72 0.11 178);
+    
+    --color-primary: #09f;
+    --color-primary-light: #ceecff;
+    --color-primary-dark: rgb(0,22,83);
+    --breakpoint-xs: 350px;
+
+    --font-display: 'Inter', system-ui, sans-serif;
 
 }
+
+.social-button {
+    @applay p-2 size-10 xs:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform;
+}
+
