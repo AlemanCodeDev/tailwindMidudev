@@ -30,4 +30,5 @@ Route::get('/loginTres', [LoginController::class, 'loginImg']);
 
 Route::get('/curso', [SumaController::class, 'tailwind']);
 
+Route::get('/svg', [SumaController::class, 'svgConvert']);
 

@@ -24,4 +24,7 @@ class SumaController extends Controller
     public function tailwind(){
         return view('tailwindCurso');
     }
+    public function svgConvert(){
+        return view('convertSvgToPng');
+    }
 }

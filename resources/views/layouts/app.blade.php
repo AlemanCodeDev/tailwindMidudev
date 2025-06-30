@@ -15,7 +15,8 @@
     <a href="/inicio">Suma</a> |
     <a href="/template">Template|</a>
     <a href="/productos">Productos|</a>
-    <a href="/curso">Tailwind (midudev)</a>
+    <a href="/curso">Tailwind (midudev)|</a>
+    <a href="/svg">Svg Convert</a>
   </section>
   <p class="font-script">This will use the Great Vibes font family. (template)</p>
   
